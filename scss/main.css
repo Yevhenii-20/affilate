@@ -145,7 +145,6 @@ body {
   margin: 102px;
   position: absolute;
   width: 105%;
-  transform: translateX(-120px);
   left: -120px;
   z-index: 9;
 }
