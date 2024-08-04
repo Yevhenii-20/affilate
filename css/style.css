@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.scroll-container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+.scroll-content {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll 5s linear infinite;
+}
+
+.scroll-content img {
+    display: inline-block;
+    width: 200px; /* Задайте ширину зображень */
+    height: auto;
+    margin-right: 20px; /* Міжзображенний проміжок */
+}
+
+/* Анімація для нескінченної прокрутки */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
